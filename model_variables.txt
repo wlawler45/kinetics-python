@@ -1,0 +1,12 @@
+alphaGLC = 1; 
+alphaACE = 0;
+
+H        = power(10,-pH)*1e+3;
+EIIA     = EIIAtotal - EIIAP;
+CrpcAMP  = Crptotal*power(cAMP,nCrpcAMP)/(power(cAMP,nCrpcAMP)+power(KCrpcAMP,nCrpcAMP));
+Crp      = Crptotal - CrpcAMP;
+CraFBP   = Cratotal*power(FBP,nCraFBP)/(power(FBP,nCraFBP)+power(KCraFBP,nCraFBP));
+Cra      = Cratotal - CraFBP;
+PdhRPYR  = PdhRtotal*power(PYR,nPdhRPYR)/(power(PYR,nPdhRPYR)+power(KPdhRPYR,nPdhRPYR));
+PdhR     = PdhRtotal - PdhRPYR;
+mu       = kATP*ATP;
